@@ -5,6 +5,7 @@ import Login from "../components/main/login/Login";
 import Register from "../components/main/register/Register";
 import AboutPage from "../components/main/about_page/AboutPage";
 import ClassPage from "../components/main/class_page/ClassPage";
+import PageError from "../components/main/page_error/PageError";
 
 const routes = createBrowserRouter([
     {
@@ -32,6 +33,7 @@ const routes = createBrowserRouter([
                 element: <Register />,
             },
         ],
+        errorElement: <PageError />,
     },
 ]);
 
