@@ -1,9 +1,10 @@
 import React from "react";
+import FirstSection from "./sections/first_section/FirstSection";
 
 const LandingPage = () => {
     return (
         <div>
-            <h2>Landing Page</h2>
+            <FirstSection />
         </div>
     );
 };
