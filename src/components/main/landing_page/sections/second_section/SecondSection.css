@@ -1,0 +1,134 @@
+.second-section-content {
+    text-decoration: none;
+    list-style: none;
+    text-transform: initial;
+}
+
+.section2-content {
+    padding: 5%;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.content-title {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.content-header span {
+    float: left;
+    font-size: 2.5em;
+}
+
+.content-header p {
+    opacity: 50%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    margin-top: 10%;
+}
+
+.grid-items .item {
+    text-align: center;
+}
+
+.section1,
+.section2,
+.section3 {
+    height: 100%;
+    display: inline-block;
+    padding: 0px 50px 50px 50px;
+    border-radius: 3%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.section1 .circle,
+.section2 .circle,
+.section3 .circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    line-height: 1;
+}
+
+.grid-items .item .section1 {
+    border: 3px solid #8cd6ff;
+}
+
+.grid-items .item .section1 .circle {
+    background: #0073b0;
+    border: 6px solid #8cd6ff;
+}
+
+.grid-items .item .section1 .circle img {
+    width: 50px;
+}
+
+.grid-items .item .section1 h2 {
+    color: #0073b0;
+}
+
+.grid-items .item .section2 {
+    border: 3px solid #ffcdcd;
+}
+
+.grid-items .item .section2 .circle {
+    background: #ff244c;
+    border: 6px solid #ffcdcd;
+}
+
+.grid-items .item .section2 .circle img {
+    width: 50px;
+}
+
+.grid-items .item .section2 h2 {
+    color: #ff244c;
+}
+
+.grid-items .item .section3 {
+    border: 3px solid #a6f48a;
+}
+
+.grid-items .item .section3 .circle {
+    background: #05893a;
+    border: 6px solid #a6f48a;
+}
+
+.grid-items .item .section3 .circle img {
+    width: 50px;
+}
+
+.grid-items .item .section3 h2 {
+    color: #05893a;
+}
+
+.grid-items .item h2 {
+    margin-bottom: 20px;
+}
+
+.grid-items .item button {
+    float: left;
+}
