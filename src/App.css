@@ -6,3 +6,8 @@
     list-style: none;
     font-family: sans-serif;
 }
+
+:root {
+    --blue-1: #ecf8ff;
+    --blue-2: #0091de;
+}

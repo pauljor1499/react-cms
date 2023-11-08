@@ -1,6 +1,7 @@
 .navbar-content {
     width: 100%;
     padding: 0 5%;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,44 +14,42 @@
 a {
     padding: 25px 15px;
     color: black;
+    border-bottom: 2px solid #fff;
 }
 
 a.active {
-    background-color: rgb(140, 186, 255);
-    color: #fff;
+    background-color: var(--blue-1);
+    border-bottom: 2px solid var(--blue-2);
 }
 
 a:hover {
-    background-color: rgb(140, 186, 255);
-    color: #fff;
+    background-color: var(--blue-1);
+    border-bottom: 2px solid var(--blue-2);
 }
 
 .content-items {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 25%;
+}
+
+.item-logo {
+    padding: 10px;
+    color: var(--blue-2);
 }
 
 .item-links {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .item-buttons {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     gap: 20px;
-}
-
-.item-buttons button {
-    padding: 5px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(88, 174, 255);
-    color: white;
-    cursor: pointer;
 }
