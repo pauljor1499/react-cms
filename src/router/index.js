@@ -13,23 +13,23 @@ const routes = createBrowserRouter([
         element: <Root />,
         children: [
             {
-                path: "/",
+                path: "",
                 element: <LandingPage />,
             },
             {
-                path: "/about",
+                path: "about",
                 element: <AboutPage />,
             },
             {
-                path: "/class",
+                path: "class",
                 element: <ClassPage />,
             },
             {
-                path: "/login",
+                path: "login",
                 element: <Login />,
             },
             {
-                path: "/register",
+                path: "register",
                 element: <Register />,
             },
         ],
