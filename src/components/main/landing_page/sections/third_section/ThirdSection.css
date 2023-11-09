@@ -1,4 +1,5 @@
 .third-section-content {
+    width: 100%;
     background-color: #001632;
     padding: 100px 0px;
     text-align: center;
@@ -8,8 +9,10 @@
     row-gap: 30px;
 }
 
-.content-title {
+.third-section-content .content-title h1 {
+    width: 50%;
     margin: auto;
+    line-height: normal;
 }
 
 .content-description {
@@ -23,13 +26,9 @@
     margin-top: 50px;
 }
 
-h1 {
-    font-size: 2.5em;
-    line-height: normal;
-}
-
-p {
+.content-description span {
     font-size: 1.2em;
+    color: #fff;
 }
 
 .content-details {
@@ -58,6 +57,10 @@ p {
 
 .item-details h4 {
     color: #26a1ff;
+}
+
+.item-details span {
+    color: #fff;
 }
 
 .item-image {

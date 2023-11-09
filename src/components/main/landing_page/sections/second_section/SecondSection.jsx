@@ -26,10 +26,10 @@ const SecondSection = () => {
                                 <img src={BookPenIcon} alt="book-pen" />
                             </div>
                             <h2>Personalized Learning</h2>
-                            <p>
+                            <span>
                                 Customizable exercises and tests centered on students skill set. Taking into account individual students ability and
                                 interest makes learning more meaningful.
-                            </p>
+                            </span>
                         </div>
                     </div>
 
@@ -39,10 +39,10 @@ const SecondSection = () => {
                                 <img src={FilesIcon} alt="files" />
                             </div>
                             <h2>Trusted Content</h2>
-                            <p>
+                            <span>
                                 Created with strong collaboration between classroom teachers, parents, students and state tests writers. Thoroughly
                                 reviewed and constantly updated.
-                            </p>
+                            </span>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@ const SecondSection = () => {
                                 <img src={BookBulbIcon} alt="" />
                             </div>
                             <h2>Tools to Empower Teachers</h2>
-                            <p>Allign with state standards and college board identified competencies. Designed for college success.</p>
+                            <span>Allign with state standards and college board identified competencies. Designed for college success.</span>
                         </div>
                     </div>
                 </div>

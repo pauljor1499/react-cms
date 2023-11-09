@@ -8,7 +8,8 @@
     padding: 50px 0px;
 }
 
-.content-title {
+.fifth-section-content .content-title {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,14 +17,15 @@
     row-gap: 20px;
 }
 
-h1 {
+.fifth-section-content .content-title h1 {
     width: 50%;
+    text-align: center;
     white-space: normal;
     color: #ffffff;
     font-size: 2em;
     line-height: normal;
 }
 
-button {
+.fifth-section-content button {
     width: 200px;
 }

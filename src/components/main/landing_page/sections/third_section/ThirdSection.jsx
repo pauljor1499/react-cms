@@ -10,10 +10,10 @@ const ThirdSection = () => {
                 <h1>Drive outcomes through social learning experiences</h1>
             </div>
             <div className="content-description">
-                <p>
+                <span>
                     Together, let us explore the wonder of mathematics and let us create a better world for our generation and for the generations to
                     come.
-                </p>
+                </span>
             </div>
             <div className="content-details">
                 <div className="left-details">

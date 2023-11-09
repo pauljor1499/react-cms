@@ -15,14 +15,15 @@
     margin: auto;
 }
 
-.content-title {
-    display: flex;
+.second-section-content .content-title h1 {
+    width: 100%;
+    color: #0091de;
     margin: auto;
     text-align: center;
     white-space: nowrap;
 }
 
-.content-header p {
+.content-description p {
     opacity: 50%;
     text-align: center;
     font-size: 1.2em;
@@ -33,10 +34,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 50px;
     margin-top: 10%;
-}
-
-.grid-items .item {
-    text-align: center;
 }
 
 .section1,
@@ -64,8 +61,18 @@
     align-items: center;
 }
 
-h2 {
-    line-height: 1;
+.section1 h2,
+.section2 h2,
+.section3 h2 {
+    text-align: center;
+}
+
+.section1 span,
+.section2 span,
+.section3 span {
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .grid-items .item .section1 {
