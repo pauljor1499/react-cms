@@ -8,7 +8,7 @@ const NavBar = () => {
 
     return (
         <div className="navbar-content">
-            <div className="content-items">
+            {/* <div className="content-items">
                 <div className="item-logo">
                     <h2>MathMatters</h2>
                 </div>
@@ -17,6 +17,14 @@ const NavBar = () => {
                     <NavLink to="/about">About</NavLink>
                     <NavLink to="/class">Class</NavLink>
                 </div>
+            </div> */}
+            <div className="item-logo">
+                <h2>MathMatters</h2>
+            </div>
+            <div className="item-links">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/class">Class</NavLink>
             </div>
             <div className="item-buttons">
                 <Button
@@ -27,7 +35,6 @@ const NavBar = () => {
                 >
                     Login
                 </Button>
-
                 <Button
                     variant="contained"
                     onClick={() => {

@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "../components/Root";
+import MainPage from "../components/main/Main";
 import LandingPage from "../components/main/landing_page/LandingPage";
 import Login from "../components/main/login/Login";
 import Register from "../components/main/register/Register";
@@ -10,7 +10,7 @@ import PageError from "../components/main/page_error/PageError";
 const routes = createBrowserRouter([
     {
         path: "/",
-        element: <Root />,
+        element: <MainPage />,
         children: [
             {
                 path: "",

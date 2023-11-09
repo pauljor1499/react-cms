@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import NavBar from "./main/navbar/NavBar";
-import Footer from "./main/footer/Footer";
+import NavBar from "./navbar/NavBar";
+import Footer from "./footer/Footer";
 
-const Root = () => {
+const Main = () => {
     return (
         <>
             <NavBar />
@@ -13,4 +13,4 @@ const Root = () => {
     );
 };
 
-export default Root;
+export default Main;
