@@ -10,7 +10,7 @@ const SecondSection = () => {
             <div className="section2-content">
                 <div className="content-header">
                     <div className="content-title">
-                        <span>Why choose MathMatters?</span>
+                        <h1>Why choose MathMatters?</h1>
                     </div>
                     <div className="content-description">
                         <p>
