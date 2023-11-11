@@ -1,5 +1,5 @@
 import React from "react";
-import "./FirstSection.css";
+import "./FirstSection.scss";
 import Button from "@mui/material/Button";
 import BannerImage from "../../../../../assets/landing_page/section_1/banner.jpg";
 
