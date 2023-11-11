@@ -7,7 +7,7 @@ const FirstSection = () => {
     return (
         <div className="first-section-content">
             <div className="content-message">
-                <h1>UNLOCK THE POWER OF YOUR FULL POTENCIAL.</h1>
+                <h1>UNLOCK THE POWER OF YOUR FULL POTENCIAL</h1>
                 <p>You'll definitely find the right solution for your math journey.</p>
                 <Button variant="contained" color="success" size="large">
                     Register
