@@ -1,5 +1,8 @@
 import React from "react";
 import "./Footer.scss";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -43,13 +46,13 @@ const Footer = () => {
                         <h3>FOLLOW US</h3>
                         <div className="social-links">
                             <div className="social-item">
-                                {/* <v-icon color="white"> mdi-facebook </v-icon> */}
+                                <FaFacebook className="item-icon" />
                             </div>
                             <div className="social-item">
-                                {/* <v-icon color="white"> mdi-twitter </v-icon> */}
+                                <FaTwitter className="item-icon" />
                             </div>
                             <div className="social-item">
-                                {/* <v-icon color="white"> mdi-instagram </v-icon> */}
+                                <FaInstagram className="item-icon" />
                             </div>
                         </div>
                     </div>
