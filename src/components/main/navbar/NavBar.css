@@ -11,18 +11,18 @@
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-a {
+.navbar-content a {
     padding: 25px 15px;
     color: black;
     border-bottom: 2px solid #fff;
 }
 
-a.active {
+.navbar-content a.active {
     background-color: var(--blue-1);
     border-bottom: 2px solid var(--blue-2);
 }
 
-a:hover {
+.navbar-content a:hover {
     background-color: var(--blue-1);
     border-bottom: 2px solid var(--blue-2);
 }
@@ -34,20 +34,20 @@ a:hover {
     align-items: center;
 } */
 
-.item-logo {
+.navbar-content .item-logo {
     flex: 0.5;
     padding: 10px;
     color: var(--blue-2);
 }
 
-.item-links {
+.navbar-content .item-links {
     flex: 1;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.item-buttons {
+.navbar-content .item-buttons {
     flex: 1;
     display: flex;
     justify-content: right;
@@ -55,6 +55,6 @@ a:hover {
     gap: 20px;
 }
 
-.item-buttons button {
+.navbar-content .item-buttons button {
     width: 25%;
 }
