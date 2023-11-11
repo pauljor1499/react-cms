@@ -1,0 +1,15 @@
+.login-page-content {
+    width: 100%;
+    padding: 5%;
+    background-color: #0091de;
+}
+
+.content-card {
+    max-width: 450px;
+    padding: 20px;
+    margin: auto;
+}
+
+.card-title {
+    text-align: center;
+}
