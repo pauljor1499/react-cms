@@ -20,6 +20,10 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 
+import { Link as ReactRouterLink } from "react-router-dom";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+
 const Login = () => {
     const [showPassword, setShowPassword] = React.useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -92,6 +96,25 @@ const Login = () => {
                             <Button variant="contained" fullWidth>
                                 <b>Log In</b>
                             </Button>
+                            <br />
+                            <br />
+                            <br />
+                            <Grid container>
+                                <Grid item xs>
+                                    <Link component={ReactRouterLink} to="/forgot" variant="body2">
+                                        Forgot Password?
+                                    </Link>
+                                </Grid>
+                                <Grid item>
+                                    <Link
+                                        component={ReactRouterLink}
+                                        to="/register"
+                                        variant="body2"
+                                    >
+                                        Don't have an account? Sign Up
+                                    </Link>
+                                </Grid>
+                            </Grid>
                         </div>
                     </CardContent>
                 </Card>

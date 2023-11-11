@@ -2,6 +2,7 @@
     width: 100%;
     padding: 5%;
     background-color: #0091de;
+    text-decoration: dashed;
 }
 
 .content-card {
@@ -12,4 +13,10 @@
 
 .card-title {
     text-align: center;
+}
+
+.content-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
