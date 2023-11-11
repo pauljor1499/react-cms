@@ -40,82 +40,65 @@ const Login = () => {
         <>
             <div className="login-page-content">
                 <Card className="content-card">
-                    <CardContent>
+                    <CardContent className="card-body">
                         <div className="card-title">
                             <h4>Log In Account</h4>
                         </div>
-                        <br />
-                        <br />
-                        <br />
-                        <div className="card-body">
-                            <FormControl fullWidth required margin="normal">
-                                <InputLabel id="demo-simple-select-helper-label">Role</InputLabel>
-                                <Select value={role} onChange={handleRoleSelect} label="Role">
-                                    <MenuItem value={"Student"}>Student</MenuItem>
-                                    <MenuItem value={"Teacher"}>Teacher</MenuItem>
-                                </Select>
-                                {/* <FormHelperText>With label + helper text</FormHelperText> */}
-                            </FormControl>
-                            <br />
-                            <br />
-                            <br />
-                            <TextField
-                                label="Email"
-                                variant="outlined"
-                                margin="none"
+                        <FormControl fullWidth required margin="normal">
+                            <InputLabel id="demo-simple-select-helper-label">Role</InputLabel>
+                            <Select value={role} onChange={handleRoleSelect} label="Role">
+                                <MenuItem value={"Student"}>Student</MenuItem>
+                                <MenuItem value={"Teacher"}>Teacher</MenuItem>
+                            </Select>
+                            {/* <FormHelperText>With label + helper text</FormHelperText> */}
+                        </FormControl>
+
+                        <TextField
+                            label="Email"
+                            variant="outlined"
+                            margin="none"
+                            required
+                            fullWidth
+                        />
+
+                        <FormControl fullWidth required>
+                            <InputLabel>Password</InputLabel>
+                            <OutlinedInput
+                                label="Password"
                                 required
-                                fullWidth
+                                type={showPassword ? "text" : "password"}
+                                endAdornment={
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseEvents}
+                                            onMouseUp={handleMouseEvents}
+                                            edge="end"
+                                        >
+                                            {showPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                }
                             />
-                            <br />
-                            <br />
-                            <br />
-                            <FormControl fullWidth required>
-                                <InputLabel>Password</InputLabel>
-                                <OutlinedInput
-                                    label="Password"
-                                    required
-                                    type={showPassword ? "text" : "password"}
-                                    endAdornment={
-                                        <InputAdornment position="end">
-                                            <IconButton
-                                                aria-label="toggle password visibility"
-                                                onClick={handleClickShowPassword}
-                                                onMouseDown={handleMouseEvents}
-                                                onMouseUp={handleMouseEvents}
-                                                edge="end"
-                                            >
-                                                {showPassword ? <Visibility /> : <VisibilityOff />}
-                                            </IconButton>
-                                        </InputAdornment>
-                                    }
-                                />
-                            </FormControl>
-                            <br />
-                            <br />
-                            <br />
-                            <Button variant="contained" fullWidth>
-                                <b>Log In</b>
-                            </Button>
-                            <br />
-                            <br />
-                            <br />
-                            <Grid container>
-                                <Grid item xs>
-                                    <Link component={ReactRouterLink} to="/forgot" variant="body2">
-                                        Forgot Password?
-                                    </Link>
-                                </Grid>
-                                <Grid item>
-                                    <Link
-                                        component={ReactRouterLink}
-                                        to="/register"
-                                        variant="body2"
-                                    >
-                                        Don't have an account? Sign Up
-                                    </Link>
-                                </Grid>
+                        </FormControl>
+
+                        <Button variant="contained" fullWidth>
+                            <b>Log In</b>
+                        </Button>
+
+                        <Grid container>
+                            <Grid item xs>
+                                <Link component={ReactRouterLink} to="/forgot" variant="body2">
+                                    Forgot Password?
+                                </Link>
                             </Grid>
-                        </div>
+                            <Grid item>
+                                <Link component={ReactRouterLink} to="/register" variant="body2">
+                                    Don't have an account? Sign Up
+                                </Link>
+                            </Grid>
+                        </Grid>
                     </CardContent>
                 </Card>
             </div>

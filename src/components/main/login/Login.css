@@ -7,16 +7,16 @@
 
 .content-card {
     max-width: 450px;
-    padding: 20px;
+    padding: 20px 0;
     margin: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .card-title {
     text-align: center;
-}
-
-.content-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
