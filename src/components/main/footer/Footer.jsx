@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.scss";
 
 const Footer = () => {
     return (
@@ -9,9 +9,12 @@ const Footer = () => {
                     <div className="about">
                         <h3>MATHMATTERS</h3>
                         <p>
-                            At MathMatters, we hold the belief that everyone, no matter their age, gender, or race, possesses a natural aptitude for
-                            comprehending mathematical concepts. Based on this foundation, we aim to create a setting for learning that recognizes and
-                            fosters each person's unique abilities, encouraging them to develop their skills to the fullest extent possible.
+                            At MathMatters, we hold the belief that everyone, no matter their age,
+                            gender, or race, possesses a natural aptitude for comprehending
+                            mathematical concepts. Based on this foundation, we aim to create a
+                            setting for learning that recognizes and fosters each person's unique
+                            abilities, encouraging them to develop their skills to the fullest
+                            extent possible.
                         </p>
                     </div>
                 </div>
@@ -39,9 +42,15 @@ const Footer = () => {
                     <div className="socials">
                         <h3>FOLLOW US</h3>
                         <div className="social-links">
-                            <div className="social-item">{/* <v-icon color="white"> mdi-facebook </v-icon> */}</div>
-                            <div className="social-item">{/* <v-icon color="white"> mdi-twitter </v-icon> */}</div>
-                            <div className="social-item">{/* <v-icon color="white"> mdi-instagram </v-icon> */}</div>
+                            <div className="social-item">
+                                {/* <v-icon color="white"> mdi-facebook </v-icon> */}
+                            </div>
+                            <div className="social-item">
+                                {/* <v-icon color="white"> mdi-twitter </v-icon> */}
+                            </div>
+                            <div className="social-item">
+                                {/* <v-icon color="white"> mdi-instagram </v-icon> */}
+                            </div>
                         </div>
                     </div>
                 </div>

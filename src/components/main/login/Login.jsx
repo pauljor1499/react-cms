@@ -1,5 +1,5 @@
 import React from "react";
-import "./Login.css";
+import "./Login.scss";
 //card
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
