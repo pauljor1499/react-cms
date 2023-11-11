@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavBar.css";
+import "./NavBar.scss";
 import { NavLink, useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 
