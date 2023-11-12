@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.scss";
 //card
 import Card from "@mui/material/Card";
@@ -21,19 +21,42 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 
 import { Link as ReactRouterLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Link from "@mui/material/Link";
 
 const Login = () => {
-    const [showPassword, setShowPassword] = React.useState(false);
+    const navigate = useNavigate();
+
+    const [role, setRole] = useState("");
+    const handleRoleSelect = (event) => {
+        setRole(event.target.value);
+    };
+
+    const [email, setEmail] = useState("");
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const [password, setPassword] = useState("");
+    const handlePassword = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const [showPassword, setShowPassword] = useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
     const handleMouseEvents = (event) => {
         event.preventDefault();
     };
 
-    const [role, setRole] = React.useState("");
-    const handleRoleSelect = (event) => {
-        setRole(event.target.value);
+    const clickLogin = () => {
+        navigate("/teacher");
     };
+
+    // const checkLogin = () => {
+    //     if (email == "Student") {
+    //     } else if (email == "Teacher") {
+    //     }
+    // };
 
     return (
         <>
@@ -41,7 +64,7 @@ const Login = () => {
                 <Card className="content-card">
                     <CardContent className="card-body">
                         <div className="card-title">
-                            <h4>Log In Account</h4>
+                            <h4>Log In Account </h4>
                         </div>
                         <FormControl fullWidth required>
                             <InputLabel>Role</InputLabel>
@@ -52,6 +75,8 @@ const Login = () => {
                             {/* <FormHelperText>With label + helper text</FormHelperText> */}
                         </FormControl>
                         <TextField
+                            value={email}
+                            onChange={handleEmail}
                             label="Email"
                             variant="outlined"
                             margin="none"
@@ -61,6 +86,8 @@ const Login = () => {
                         <FormControl fullWidth required>
                             <InputLabel>Password</InputLabel>
                             <OutlinedInput
+                                value={password}
+                                onChange={handlePassword}
                                 label="Password"
                                 required
                                 type={showPassword ? "text" : "password"}
@@ -79,7 +106,7 @@ const Login = () => {
                                 }
                             />
                         </FormControl>
-                        <Button variant="contained" fullWidth>
+                        <Button variant="contained" fullWidth onClick={clickLogin}>
                             <b>Log In</b>
                         </Button>
                         <div className="additional-actions">
