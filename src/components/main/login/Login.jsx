@@ -22,7 +22,6 @@ import Select from "@mui/material/Select";
 
 import { Link as ReactRouterLink } from "react-router-dom";
 import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
 
 const Login = () => {
     const [showPassword, setShowPassword] = React.useState(false);
@@ -44,15 +43,14 @@ const Login = () => {
                         <div className="card-title">
                             <h4>Log In Account</h4>
                         </div>
-                        <FormControl fullWidth required margin="normal">
-                            <InputLabel id="demo-simple-select-helper-label">Role</InputLabel>
+                        <FormControl fullWidth required>
+                            <InputLabel>Role</InputLabel>
                             <Select value={role} onChange={handleRoleSelect} label="Role">
                                 <MenuItem value={"Student"}>Student</MenuItem>
                                 <MenuItem value={"Teacher"}>Teacher</MenuItem>
                             </Select>
                             {/* <FormHelperText>With label + helper text</FormHelperText> */}
                         </FormControl>
-
                         <TextField
                             label="Email"
                             variant="outlined"
@@ -60,7 +58,6 @@ const Login = () => {
                             required
                             fullWidth
                         />
-
                         <FormControl fullWidth required>
                             <InputLabel>Password</InputLabel>
                             <OutlinedInput
@@ -82,23 +79,17 @@ const Login = () => {
                                 }
                             />
                         </FormControl>
-
                         <Button variant="contained" fullWidth>
                             <b>Log In</b>
                         </Button>
-
-                        <Grid container>
-                            <Grid item xs>
-                                <Link component={ReactRouterLink} to="/forgot" variant="body2">
-                                    Forgot Password?
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link component={ReactRouterLink} to="/register" variant="body2">
-                                    Don't have an account? Register
-                                </Link>
-                            </Grid>
-                        </Grid>
+                        <div className="additional-actions">
+                            <Link component={ReactRouterLink} to="/forgot" variant="body2">
+                                Forgot Password?
+                            </Link>
+                            <Link component={ReactRouterLink} to="/register" variant="body2">
+                                Don't have an account? Register
+                            </Link>
+                        </div>
                     </CardContent>
                 </Card>
             </div>

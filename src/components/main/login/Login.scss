@@ -8,15 +8,20 @@
         max-width: 450px;
         padding: 20px 0;
         margin: auto;
-    }
 
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
 
-    .card-title {
-        text-align: center;
+            .card-title {
+                text-align: center;
+            }
+
+            .additional-actions {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
 }
